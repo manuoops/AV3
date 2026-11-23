@@ -1,0 +1,2 @@
+ALTER TABLE "chaves_api"
+ADD COLUMN "versao" INTEGER NOT NULL DEFAULT 1;

@@ -1,0 +1,56 @@
+/* Ajustes visuais: menos enfeite, cores sólidas e contraste confortável. */
+:root {
+  --ink: #26332c;
+  --muted: #727d75;
+  --line: #e5e8e2;
+  --canvas: #f6f6f1;
+  --forest: #264b3b;
+  --forest2: #315b48;
+  --accent: #527c55;
+  --lime: #c4d9a6;
+}
+
+.login-story {
+  background: #264b3b;
+}
+
+.story-orbit {
+  display: none;
+}
+
+.story-bottom i {
+  box-shadow: none;
+}
+
+.progress-fill {
+  background: #709b61;
+}
+
+.stat-card::after {
+  display: none;
+}
+
+.stat-card,
+.panel,
+.table-card {
+  border-radius: 9px;
+  box-shadow: 0 1px 4px #20352b0b;
+}
+
+.analysis-card {
+  border-radius: 9px;
+}
+
+.entity-dialog {
+  border-radius: 10px;
+  box-shadow: 0 12px 40px #071d1330;
+}
+
+.button:hover {
+  transform: none;
+}
+
+.topbar {
+  backdrop-filter: none;
+  background: #fff;
+}

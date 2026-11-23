@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#12352b" />
+    <meta name="description" content="GreenCode: gestão de logística reversa de equipamentos eletrônicos." />
+    <title>GreenCode · Gestão circular</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link rel="stylesheet" href="/assets/styles-refined.css" />
+    <script src="/assets/app.js" defer></script>
+  </head>
+  <body>
+    <div id="login-screen" class="login-screen">
+      <section class="login-story">
+        <a class="brand brand-light" href="/" aria-label="GreenCode início"><span>green<span class="brand-accent">code</span></span></a>
+        <div class="story-copy"><span class="eyebrow">GESTÃO CIRCULAR</span><h1>O próximo ciclo começa com uma boa decisão.</h1><p>Acompanhe lotes, equipamentos e resultados da logística reversa em um só lugar.</p></div>
+        <div class="story-bottom"><i></i> Plataforma de logística reversa</div><div class="story-orbit orbit-one"></div><div class="story-orbit orbit-two"></div>
+      </section>
+      <main class="login-panel"><form id="login-form" class="login-card">
+        <div class="login-heading"><span class="eyebrow eyebrow-green">BEM-VINDO(A) DE VOLTA</span><h2>Acesse sua conta</h2><p>Entre com as credenciais do seu usuário GreenCode.</p></div>
+        <label for="login-user">Usuário</label><input id="login-user" name="usuario" autocomplete="username" required maxlength="50" placeholder="Seu usuário" />
+        <label for="login-password">Senha</label><input id="login-password" name="senha" type="password" autocomplete="current-password" required maxlength="256" placeholder="Sua senha" />
+        <p id="login-error" class="form-error" role="alert" hidden></p><button class="button button-primary button-wide" type="submit">Entrar <span>→</span></button><p class="login-footnote">Acesso protegido por autenticação GreenCode.</p>
+      </form></main>
+    </div>
+    <div id="app-screen" class="app-shell" hidden>
+      <aside id="sidebar" class="sidebar">
+        <a class="brand brand-dark" href="/" aria-label="GreenCode painel"><span>green<span class="brand-accent">code</span></span></a>
+        <div class="nav-caption">ESPAÇO DE TRABALHO</div>
+        <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+          <button class="nav-link is-active" data-view="dashboard"><span>◫</span> Visão geral</button>
+          <button class="nav-link" data-view="organizacoes"><span>⌂</span> Organizações</button>
+          <button class="nav-link" data-view="contratos"><span>▤</span> Contratos</button>
+          <button class="nav-link" data-view="lotes"><span>▦</span> Lotes</button>
+          <button class="nav-link" data-view="equipamentos"><span>◈</span> Equipamentos</button>
+          <button class="nav-link" data-view="usuarios"><span>♙</span> Usuários</button>
+          <button class="nav-link" data-view="analises"><span>⌁</span> Análises</button>
+          <button class="nav-link admin-only" data-view="chaves"><span>⌑</span> Chaves de API</button>
+        </nav>
+        <div class="sidebar-bottom"><a class="docs-link" href="/docs/" target="_blank" rel="noreferrer"><span>↗</span> Documentação da API</a>
+          <div class="account-card"><span id="user-avatar" class="avatar">GC</span><span class="account-meta"><strong id="account-name">Usuário</strong><small id="account-role">Perfil</small></span><button id="logout-button" class="icon-button logout-button" title="Sair" aria-label="Sair">↗</button></div>
+        </div>
+      </aside>
+      <div class="main-column"><header class="topbar"><button id="menu-button" class="icon-button menu-button" aria-label="Abrir menu">☰</button><div class="breadcrumbs"><span>GreenCode</span><span class="crumb-divider">/</span><strong id="breadcrumb-current">Visão geral</strong></div><div class="topbar-right"><span class="system-status"><i></i> Sistema operacional</span><span id="topbar-date"></span></div></header><main id="page-content" class="page-content" tabindex="-1"></main></div>
+      <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    </div>
+    <dialog id="entity-dialog" class="entity-dialog"><form id="entity-form" method="dialog"><div class="dialog-header"><div><span class="eyebrow eyebrow-green">GREENCODE</span><h2 id="dialog-title">Novo registro</h2></div><button type="button" class="icon-button" data-close-dialog aria-label="Fechar">×</button></div><div id="dialog-fields" class="dialog-fields"></div><p id="dialog-error" class="form-error" role="alert" hidden></p><div class="dialog-actions"><button type="button" class="button button-quiet" data-close-dialog>Cancelar</button><button id="dialog-submit" class="button button-primary" type="submit">Salvar</button></div></form></dialog>
+    <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>
